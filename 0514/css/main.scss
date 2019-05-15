@@ -1,0 +1,27 @@
+$colors: (
+
+    primary:#005dff,
+    accent:#fff6bb
+)
+
+@function color($color-name){
+    @return map-get($colors , $color-name)
+}
+
+$mycolor: #005dff;
+
+body {
+    background-color: map-get($colors: , : );
+}
+
+a {
+    color: #ccc;
+
+    &.home {
+         color: #f0f;
+    }
+
+    &:hover {
+         text-decoration: none;
+    }
+}
